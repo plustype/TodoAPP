@@ -1,0 +1,10 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+<head>
+    <%--        add CSS file--%>
+    <link href="webjars/bootstrap/5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="webjars/bootstrap-datepicker/1.9.0/dist/css/bootstrap-datepicker.standalone.min.css" rel="stylesheet">
+
+    <title> Manage Todos </title>
+</head>
