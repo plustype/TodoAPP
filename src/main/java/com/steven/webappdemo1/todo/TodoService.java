@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-@Service
+//@Service
 public class TodoService {
 
     private static List<TodoTask> todoTasks = new ArrayList<>();

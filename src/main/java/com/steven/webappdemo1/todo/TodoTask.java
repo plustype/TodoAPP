@@ -1,17 +1,25 @@
 package com.steven.webappdemo1.todo;
 
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
 
 import java.time.LocalDate;
 
+@Entity
 public class TodoTask {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "book_generator")
+    @SequenceGenerator(name="book_generator", sequenceName = "book_seq", initialValue = 1001, allocationSize=1)
     private int id;
     private String username;
     @Size(min = 10, message = "Please enter at least 10 characters")
     private String description;
     private LocalDate targetCompleteDate;
     private boolean done;
+
+    public TodoTask() {
+    }
 
     public TodoTask(int id, String username, String description, LocalDate targetCompleteDate, boolean done) {
         this.id = id;
